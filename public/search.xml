@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hi]]></title>
-    <url>%2F2018%2F12%2F08%2Fhi%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[Linux下更改时区]]></title>
+    <url>%2F2018%2F12%2F12%2Fchange_timezone_in_linux%2F</url>
+    <content type="text"><![CDATA[tzselecttzselect 该命令可以查询时区并生成配置信息，并不会实际生效。举例说明需要配置中国北京时间， 则按照步骤一步步选择下去，得到配置信息为TZ=&#39;Asia/Shanghai&#39;; export TZ1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859tafan ~ $ tzselectPlease identify a location so that time zone rules can be set correctly.Please select a continent, ocean, &quot;coord&quot;, or &quot;TZ&quot;. 1) Africa 2) Americas 3) Antarctica 4) Asia 5) Atlantic Ocean 6) Australia 7) Europe 8) Indian Ocean 9) Pacific Ocean10) coord - I want to use geographical coordinates.11) TZ - I want to specify the time zone using the Posix TZ format.#? 4Please select a country whose clocks agree with yours. 1) Afghanistan 18) Israel 35) Palestine 2) Armenia 19) Japan 36) Philippines 3) Azerbaijan 20) Jordan 37) Qatar 4) Bahrain 21) Kazakhstan 38) Russia 5) Bangladesh 22) Korea (North) 39) Saudi Arabia 6) Bhutan 23) Korea (South) 40) Singapore 7) Brunei 24) Kuwait 41) Sri Lanka 8) Cambodia 25) Kyrgyzstan 42) Syria 9) China 26) Laos 43) Taiwan10) Cyprus 27) Lebanon 44) Tajikistan11) East Timor 28) Macau 45) Thailand12) Georgia 29) Malaysia 46) Turkmenistan13) Hong Kong 30) Mongolia 47) United Arab Emirates14) India 31) Myanmar (Burma) 48) Uzbekistan15) Indonesia 32) Nepal 49) Vietnam16) Iran 33) Oman 50) Yemen17) Iraq 34) Pakistan#? 9Please select one of the following time zone regions.1) Beijing Time2) Xinjiang Time#? 1The following information has been given: China Beijing TimeTherefore TZ=&apos;Asia/Shanghai&apos; will be used.Local time is now: Mon Dec 10 17:46:38 CST 2018.Universal Time is now: Mon Dec 10 09:46:38 UTC 2018.Is the above information OK?1) Yes2) No#? 1You can make this change permanent for yourself by appending the line TZ=&apos;Asia/Shanghai&apos;; export TZto the file &apos;.profile&apos; in your home directory; then log out and log in again.Here is that TZ value again, this time on standard output so that youcan use the /usr/bin/tzselect command in shell scripts:Asia/Shanghai ####.profile修改 查看当前时区（当前是英国伦敦时间, 时区是UTC±0） 12~ $ date -RMon, 10 Dec 2018 09:56:19 +0000 把TZ=&#39;Asia/Shanghai&#39;; export TZ 加到~/.profile文件中， 如果有其他的TZ配置需要注释掉， 最后输入命令source ~/.profile使文件立即生效 确认修改时区是正确的， 北京是UTC+8时区 12~ $ date -RMon, 10 Dec 2018 18:00:20 +0800]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>timezone</tag>
+      </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hello FanTao]]></title>
-    <url>%2F2018%2F12%2F08%2Fhello%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F12%2F08%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[Linux下 Hexo + GitHub 搭建个人博客]]></title>
+    <url>%2F2018%2F12%2F12%2Fsetup_blog_via_hexo_and_github_modules%2F</url>
+    <content type="text"><![CDATA[Hexo 简介及搭建Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 安装Hexo安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序： Git – 需要把本地的网页和文章等提交到 GitHub 上 Node.js – Hexo 博客系统是基于 Node.js 编写的 安装 Git sudo apt-get install git-core 安装成功12~ $ git --versiongit version 2.7.4 安装 Node.js安装 Node.js 的最佳方式是使用 nvm。 curl https://raw.github.com/creationix/nvm/v0.33.11/install.sh | shwget -qO- https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh 或者 手动安装： git clone http://github.com/creationix/nvm.git .nvmcd .nvm. install.sh 安装nvm完成后，重启终端并执行下列命令即可安装 Node.jsnvm install stable 安装成功12~ $ node -vv11.3.0 安装Hexo使用 npm 安装 Hexo npm install -g hexo-cli 安装成功12~ $ hexo --versionhexo-cli: 1.1.0 本地调式 Hexo执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件 123hexo init &lt;folder&gt;cd &lt;folder&gt;npm install # install node_modules 运行成功输出信息， 在浏览器中输入http://localhost:4000， 可以看到hexo页面。1234$ hexo serverINFO Start processingINFO Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.^C INFO See you again Github Pages托管Github Pages服务可以给我们提供一个静态网页的托管，以便远程浏览我们的博客内容。 首先我们需要在本机生成一个公钥以便跟github建立安全连接，使用下面命令后，一直enter下去。 $ ssh-keygen -t rsa -C “email@domain.com“ 这里的邮箱就是我们github setting 里面的邮箱，随后复制公钥内容： cat ~/.ssh/id_rsa.pub 复制后，登陆github，进入Settings-&gt;SSH and GPG keys-&gt;New SSH key-&gt;粘贴 随后进入系统测试连接是否成功： ssh -T git@github.com 根据提示输入yes，如果成功建立连接就可以进行接下来的操作了。 接下来我们使用我们需要在github上创建一个仓库repository，注意仓库名称必须为 [github_user].github.io (github_user 是你github的用户名, 这点非常重要)。 Hexo 与 GitHub Pages关联 配置 Deployment 在_config.yml文件中，找到Deployment文件，然后按照如下修改：（注意冒号后面记得空一格！）1234567891011# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:type: gitrepo: git@github.com:github_user/github_user.github.io.gitbranch: master 本地文件提交到 GitHub Pages，三个步骤，当然可以在生成静态文件后本地查看（hexo s）。1234567891011# 删除旧的 public 文件hexo clean# 生成新的 public 文件hexo generate(hexo g)# 本地查看# hexo s# 开始部署hexo deploye(hexo d) 在浏览器中输入https://github_user.github.io 就可以看到你的简单博客了。可能需要等待一段时间才能访问的。 期间出现改错误提示： ERROR Deployer not found: git, 需要安装一个扩展 npm install hexo-deployer-git –save 大功告成了 ~~~ ^_\^]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
+      </tags>
   </entry>
 </search>
