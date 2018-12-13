@@ -1,8 +1,11 @@
 title: Linux下 Hexo + GitHub 搭建个人博客
+
 categories: Hexo
+
 tags: 
   - Hexo
   - GitHub
+
 ---
 #### [Hexo](https://hexo.io/zh-cn/docs/index.html) 简介及搭建
 Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
