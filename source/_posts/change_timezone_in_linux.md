@@ -1,7 +1,10 @@
 title: Linux下更改时区
+
 categories: linux
+
 tags: 
   - timezone
+
 ---
 #### tzselect
 tzselect 该命令可以查询时区并生成配置信息，并不会实际生效。
@@ -68,7 +71,7 @@ can use the /usr/bin/tzselect command in shell scripts:
 Asia/Shanghai
 ```
 
-####`.profile`修改
+#### `.profile`修改
 1. 查看当前时区（当前是英国伦敦时间, 时区是UTC±0）
 ```
 ~ $ date -R
