@@ -2,7 +2,7 @@ title: Linux下 Hexo + GitHub 搭建个人博客
 
 categories: Hexo
 
-tags: 
+tags:
   - Hexo
   - GitHub
 
@@ -35,7 +35,7 @@ git version 2.7.4
 wget -qO- https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh
 
 或者
-> 手动安装： git clone http://github.com/creationix/nvm.git .nvm 
+> 手动安装： git clone http://github.com/creationix/nvm.git .nvm
 cd .nvm
 . install.sh
 
@@ -132,5 +132,5 @@ hexo deploye(hexo d)
 期间出现改错误提示： `ERROR Deployer not found: git`, 需要安装一个扩展
 > npm install hexo-deployer-git --save
 
-大功告成了 ~~~ ^_\^
-<!--more-->
+大功告成了 ~~~ ^
+<!-- more -->

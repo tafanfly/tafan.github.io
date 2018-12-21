@@ -2,7 +2,7 @@ title: Linux下更改时区
 
 categories: linux
 
-tags: 
+tags:
   - timezone
 
 ---
@@ -84,4 +84,4 @@ Mon, 10 Dec 2018 09:56:19 +0000
 ~ $ date -R
 Mon, 10 Dec 2018 18:00:20 +0800
 ```
-<!--more-->
+<!-- more -->
