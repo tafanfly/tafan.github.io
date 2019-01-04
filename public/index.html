@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/12/change_timezone_in_linux/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/02/change_timezone_in_linux/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tafanfly">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2018/12/12/change_timezone_in_linux/" class="post-title-link" itemprop="http://yoursite.com/index.html">Linux下更改时区</a>
+                <a href="/2019/01/02/change_timezone_in_linux/" class="post-title-link" itemprop="http://yoursite.com/index.html">Linux下更改时区</a>
               
             
           </h1>
@@ -466,7 +466,7 @@
                 
               
 
-              <time title="创建时间：2018-12-12 23:02:38" itemprop="dateCreated datePublished" datetime="2018-12-12T23:02:38+08:00">2018-12-12</time>
+              <time title="创建时间：2019-01-02 21:13:52" itemprop="dateCreated datePublished" datetime="2019-01-02T21:13:52+08:00">2019-01-02</time>
             
 
             
@@ -522,8 +522,7 @@
       
         
           <h4 id="tzselect"><a href="#tzselect" class="headerlink" title="tzselect"></a>tzselect</h4><p>tzselect 该命令可以查询时区并生成配置信息，并不会实际生效。<br>举例说明需要配置中国北京时间， 则按照步骤一步步选择下去，得到配置信息为<code>TZ=&#39;Asia/Shanghai&#39;; export TZ</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">tafan ~ $ tzselect</span><br><span class="line">Please identify a location so that time zone rules can be set correctly.</span><br><span class="line">Please select a continent, ocean, &quot;coord&quot;, or &quot;TZ&quot;.</span><br><span class="line"> 1) Africa</span><br><span class="line"> 2) Americas</span><br><span class="line"> 3) Antarctica</span><br><span class="line"> 4) Asia</span><br><span class="line"> 5) Atlantic Ocean</span><br><span class="line"> 6) Australia</span><br><span class="line"> 7) Europe</span><br><span class="line"> 8) Indian Ocean</span><br><span class="line"> 9) Pacific Ocean</span><br><span class="line">10) coord - I want to use geographical coordinates.</span><br><span class="line">11) TZ - I want to specify the time zone using the Posix TZ format.</span><br><span class="line">#? 4</span><br><span class="line">Please select a country whose clocks agree with yours.</span><br><span class="line"> 1) Afghanistan           18) Israel                35) Palestine</span><br><span class="line"> 2) Armenia               19) Japan                 36) Philippines</span><br><span class="line"> 3) Azerbaijan            20) Jordan                37) Qatar</span><br><span class="line"> 4) Bahrain               21) Kazakhstan            38) Russia</span><br><span class="line"> 5) Bangladesh            22) Korea (North)         39) Saudi Arabia</span><br><span class="line"> 6) Bhutan                23) Korea (South)         40) Singapore</span><br><span class="line"> 7) Brunei                24) Kuwait                41) Sri Lanka</span><br><span class="line"> 8) Cambodia              25) Kyrgyzstan            42) Syria</span><br><span class="line"> 9) China                 26) Laos                  43) Taiwan</span><br><span class="line">10) Cyprus                27) Lebanon               44) Tajikistan</span><br><span class="line">11) East Timor            28) Macau                 45) Thailand</span><br><span class="line">12) Georgia               29) Malaysia              46) Turkmenistan</span><br><span class="line">13) Hong Kong             30) Mongolia              47) United Arab Emirates</span><br><span class="line">14) India                 31) Myanmar (Burma)       48) Uzbekistan</span><br><span class="line">15) Indonesia             32) Nepal                 49) Vietnam</span><br><span class="line">16) Iran                  33) Oman                  50) Yemen</span><br><span class="line">17) Iraq                  34) Pakistan</span><br><span class="line">#? 9</span><br><span class="line">Please select one of the following time zone regions.</span><br><span class="line">1) Beijing Time</span><br><span class="line">2) Xinjiang Time</span><br><span class="line">#? 1</span><br><span class="line"></span><br><span class="line">The following information has been given:</span><br><span class="line"></span><br><span class="line">        China</span><br><span class="line">        Beijing Time</span><br><span class="line"></span><br><span class="line">Therefore TZ=&apos;Asia/Shanghai&apos; will be used.</span><br><span class="line">Local time is now:      Mon Dec 10 17:46:38 CST 2018.</span><br><span class="line">Universal Time is now:  Mon Dec 10 09:46:38 UTC 2018.</span><br><span class="line">Is the above information OK?</span><br><span class="line">1) Yes</span><br><span class="line">2) No</span><br><span class="line">#? 1</span><br><span class="line"></span><br><span class="line">You can make this change permanent for yourself by appending the line</span><br><span class="line">        TZ=&apos;Asia/Shanghai&apos;; export TZ</span><br><span class="line">to the file &apos;.profile&apos; in your home directory; then log out and log in again.</span><br><span class="line"></span><br><span class="line">Here is that TZ value again, this time on standard output so that you</span><br><span class="line">can use the /usr/bin/tzselect command in shell scripts:</span><br><span class="line">Asia/Shanghai</span><br></pre></td></tr></table></figure></p>
-<p>####<code>.profile</code>修改</p>
-<ol>
+<h4 id="profile修改"><a href="#profile修改" class="headerlink" title=".profile修改"></a><code>.profile</code>修改</h4><ol>
 <li><p>查看当前时区（当前是英国伦敦时间, 时区是UTC±0）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~ $ date -R</span><br><span class="line">Mon, 10 Dec 2018 09:56:19 +0000</span><br></pre></td></tr></table></figure>
 </li>
@@ -536,7 +535,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2018/12/12/change_timezone_in_linux/#more" rel="contents">
+              <a class="btn" href="/2019/01/02/change_timezone_in_linux/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -596,7 +595,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/12/setup_blog_via_hexo_and_github_modules/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/02/setup_blog_via_hexo_and_github_modules/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tafanfly">
@@ -616,7 +615,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2018/12/12/setup_blog_via_hexo_and_github_modules/" class="post-title-link" itemprop="http://yoursite.com/index.html">Linux下 Hexo + GitHub 搭建个人博客</a>
+                <a href="/2019/01/02/setup_blog_via_hexo_and_github_modules/" class="post-title-link" itemprop="http://yoursite.com/index.html">Linux下 Hexo + GitHub 搭建个人博客</a>
               
             
           </h1>
@@ -641,7 +640,7 @@
                 
               
 
-              <time title="创建时间：2018-12-12 22:56:18" itemprop="dateCreated datePublished" datetime="2018-12-12T22:56:18+08:00">2018-12-12</time>
+              <time title="创建时间：2019-01-02 21:13:52" itemprop="dateCreated datePublished" datetime="2019-01-02T21:13:52+08:00">2019-01-02</time>
             
 
             
@@ -758,11 +757,11 @@
 <blockquote>
 <p>npm install hexo-deployer-git –save</p>
 </blockquote>
-<p>大功告成了 ~~~ ^_\^<br>
+<p>大功告成了 ~~~ ^<br>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2018/12/12/setup_blog_via_hexo_and_github_modules/#more" rel="contents">
+              <a class="btn" href="/2019/01/02/setup_blog_via_hexo_and_github_modules/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -962,7 +961,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
