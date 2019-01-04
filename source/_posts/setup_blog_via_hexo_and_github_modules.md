@@ -17,6 +17,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown解
 *   [Node.js](http://nodejs.org/) -- Hexo 博客系统是基于 Node.js 编写的
 
 ---
+<!-- more -->
 ##### 安装 Git
 
  `sudo apt-get install git-core`
@@ -132,5 +133,4 @@ hexo deploye(hexo d)
 期间出现改错误提示： `ERROR Deployer not found: git`, 需要安装一个扩展
 > npm install hexo-deployer-git --save
 
-大功告成了 ~~~ ^
-<!-- more -->
+大功告成了 ~~~ 

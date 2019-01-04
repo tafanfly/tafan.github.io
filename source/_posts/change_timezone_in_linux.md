@@ -1,6 +1,6 @@
 title: Linux下更改时区
 
-categories: linux
+categories: Linux
 
 tags:
   - timezone
@@ -9,6 +9,7 @@ tags:
 #### tzselect
 tzselect 该命令可以查询时区并生成配置信息，并不会实际生效。
 举例说明需要配置中国北京时间， 则按照步骤一步步选择下去，得到配置信息为`TZ='Asia/Shanghai'; export TZ`
+<!-- more -->
 ```
 tafan ~ $ tzselect
 Please identify a location so that time zone rules can be set correctly.
@@ -84,4 +85,3 @@ Mon, 10 Dec 2018 09:56:19 +0000
 ~ $ date -R
 Mon, 10 Dec 2018 18:00:20 +0800
 ```
-<!-- more -->
