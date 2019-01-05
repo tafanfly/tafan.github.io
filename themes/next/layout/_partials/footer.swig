@@ -48,6 +48,8 @@
 </span>
 </div>
 
+
+
 {% if theme.footer.powered.enable %}
   <div class="powered-by">{#
   #}{{ __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'})) }}{#
@@ -71,3 +73,8 @@
   #}{{ theme.footer.custom_text }}{#
 #}</div>
 {% endif %}
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共{{ totalcount(site) }}字</span>
+</div>

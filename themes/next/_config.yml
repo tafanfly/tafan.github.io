@@ -300,12 +300,18 @@ post_meta:
 
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
-symbols_count_time:
+post_wordcount:
+  item_text: true
+  wordcount: true
+  min2read: true
+  totalcount: true
   separated_meta: true
-  item_text_post: true
-  item_text_total: false
-  awl: 4
-  wpm: 275
+#symbols_count_time:
+#  separated_meta: true
+#  item_text_post: true
+#  item_text_total: false
+#  awl: 4
+#  wpm: 275
 
 codeblock:
   # Manual define the border radius in codeblock
@@ -846,7 +852,7 @@ lazyload: false
 
 # Progress bar in the top during page loading.
 # Dependencies: https://github.com/theme-next/theme-next-pace
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
@@ -863,7 +869,7 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme: pace-theme-mac-osx
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
@@ -1062,3 +1068,7 @@ vendors:
 css: css
 js: js
 images: images
+
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+  enabled: true
